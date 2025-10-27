@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sbjiwala.com/sitemap.xml

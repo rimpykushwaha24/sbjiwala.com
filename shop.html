@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Shop - Sbjiwala</title>
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">Sbjiwala</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="whatsapp" href="https://wa.me/919999999999?text=Hello%20Sbjiwala%20I%20want%20to%20order" target="_blank">Order on WhatsApp</a>
+  </div>
+</header>
+
+<main class="container shop-page">
+  <h1 id="vegetables">Vegetables</h1>
+  <div class="grid">
+
+    <div class="item">
+      <img src="images/vegetables/tomato.jpg" alt="tomato">
+      <h4>Tomato</h4>
+      <p class="price">₹41/kg</p>
+      <button class="buy-btn" data-name="Tomato" data-price="41">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/vegetables/potato.jpg" alt="potato">
+      <h4>Potato</h4>
+      <p class="price">₹57/kg</p>
+      <button class="buy-btn" data-name="Potato" data-price="57">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/vegetables/carrot.jpg" alt="carrot">
+      <h4>Carrot</h4>
+      <p class="price">₹43/kg</p>
+      <button class="buy-btn" data-name="Carrot" data-price="43">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/vegetables/onion.jpg" alt="onion">
+      <h4>Onion</h4>
+      <p class="price">₹66/kg</p>
+      <button class="buy-btn" data-name="Onion" data-price="66">Buy Now</button>
+    </div>
+    
+  </div>
+
+  <h1 id="fruits">Fruits</h1>
+  <div class="grid">
+
+    <div class="item">
+      <img src="images/fruits/apple.jpg" alt="apple">
+      <h4>Apple</h4>
+      <p class="price">₹138/kg</p>
+      <button class="buy-btn" data-name="Apple" data-price="138">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/fruits/banana.jpg" alt="banana">
+      <h4>Banana</h4>
+      <p class="price">₹84/kg</p>
+      <button class="buy-btn" data-name="Banana" data-price="84">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/fruits/mango.jpg" alt="mango">
+      <h4>Mango</h4>
+      <p class="price">₹137/kg</p>
+      <button class="buy-btn" data-name="Mango" data-price="137">Buy Now</button>
+    </div>
+    
+    <div class="item">
+      <img src="images/fruits/orange.jpg" alt="orange">
+      <h4>Orange</h4>
+      <p class="price">₹73/kg</p>
+      <button class="buy-btn" data-name="Orange" data-price="73">Buy Now</button>
+    </div>
+    
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Sbjiwala — Fresh Fruits & Vegetables</p>
+  </div>
+</footer>
+
+<!-- Order Modal (reuse) -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Place Your Order</h3>
+    <form id="orderForm">
+      <input type="hidden" id="productName">
+      <label>Name</label><input type="text" id="custName" required>
+      <label>Phone (WhatsApp)</label><input type="tel" id="custPhone" required>
+      <label>Address</label><textarea id="custAddress" required></textarea>
+      <button type="submit" class="btn">Submit Order</button>
+      <p class="muted">Or <a id="waLink" href="#" target="_blank">Order on WhatsApp</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body></html>

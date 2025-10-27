@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sbjiwala - Fresh Fruits & Vegetables</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">Sbjiwala</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="whatsapp" href="https://wa.me/919999999999?text=Hello%20Sbjiwala%20I%20want%20to%20order" target="_blank">Order on WhatsApp</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="images/banners/market_banner.jpg" alt="Market banner">
+  <div class="hero-text">
+    <h1>Fresh from farms — Delivered to your door</h1>
+    <p>Colorful market-style vegetables & seasonal fruits</p>
+    <a href="shop.html" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="categories container">
+  <a href="shop.html#vegetables" class="card veg">
+    <h3>Vegetables</h3>
+    <p>Fresh and daily picked</p>
+  </a>
+  <a href="shop.html#fruits" class="card fruit">
+    <h3>Fruits</h3>
+    <p>Seasonal & juicy</p>
+  </a>
+</section>
+
+<section class="featured container">
+  <h2>Featured Items</h2>
+  <div class="grid">
+    <div class="item">
+      <img src="images/vegetables/tomato.jpg" alt="Tomato">
+      <h4>Tomato</h4>
+      <p class="price">₹50/kg</p>
+      <button class="buy-btn" data-name="Tomato" data-price="50">Buy Now</button>
+    </div>
+    <div class="item">
+      <img src="images/fruits/mango.jpg" alt="Mango">
+      <h4>Mango</h4>
+      <p class="price">₹120/kg</p>
+      <button class="buy-btn" data-name="Mango" data-price="120">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 Sbjiwala — Fresh Fruits & Vegetables</p>
+  </div>
+</footer>
+
+<!-- Order Modal -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Place Your Order</h3>
+    <form id="orderForm">
+      <input type="hidden" id="productName">
+      <label>Name</label><input type="text" id="custName" required>
+      <label>Phone (WhatsApp)</label><input type="tel" id="custPhone" required>
+      <label>Address</label><textarea id="custAddress" required></textarea>
+      <button type="submit" class="btn">Submit Order</button>
+      <p class="muted">Or <a id="waLink" href="#" target="_blank">Order on WhatsApp</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
