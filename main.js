@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   function openModal(name, price){
     productNameInput.value = name + " - ₹" + price;
-    waLink.href = "https://wa.me/919999999999?text=" + encodeURIComponent("I'd like to order: " + name + " (₹"+price+")");
+    waLink.href = "https://wa.me/916306054286?text=" + encodeURIComponent("I'd like to order: " + name + " (₹"+price+")");
     modal.style.display = 'flex';
   }
   closeBtn.forEach(btn=>btn.addEventListener('click', ()=> modal.style.display='none'));
